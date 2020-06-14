@@ -23,10 +23,10 @@ a = BigFloat("3.5", precision=1000)
 b = BigFloat("0.8", precision=1000)
 c = sqrt(a + b)
 ```
-creates the temporary variable to hold the intermediate result of the
+creates a temporary variable to hold the intermediate result of the
 computation `a + b`.
 
-Using MPFR_wrap
+Using `MPFR_wrap` for in-place computation
 ```julia
 a = BigFloat("3.5", precision=1000)
 b = BigFloat("0.8", precision=1000)
@@ -35,7 +35,7 @@ add!(a, a, b)
 # take the square root of a and store it in a
 sqrt!(a, a)
 ```
-the last two operations can be combined into `sqrt!(a, add!(a, a, b))`
+The last two operations can be combined into `sqrt!(a, add!(a, a, b))`
 relying on `add!` to return the modified input `a`.
 
 The file ``examples/pi_iterative.jl`` contains two methods for the
@@ -44,9 +44,9 @@ Borwein cubic iteration taken from "A catalogue of mathematical
 formulas involving π, with analysis" by David H. Bailey available
 [online](https://www.davidhbailey.com/dhbpapers/pi-formulas.pdf).
 
-The following example shows the difference in execution time and
-memory allocation for the Brent-Salamin method using in-place and non
-in-place method.
+The following shows the difference in execution time and memory
+allocation for the Brent-Salamin method using standard and in-place
+operations.
 
 ```julia
 julia> @btime brent_salamin();
