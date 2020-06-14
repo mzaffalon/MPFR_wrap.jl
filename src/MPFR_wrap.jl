@@ -1,5 +1,13 @@
 module MPFR_wrap
 
-# Write your package code here.
+using Base.MPFR: MPFR, MPFRRoundingMode
+using Base.MPFR: DEFAULT_PRECISION, ROUNDING_MODE
+using Base.MPFR: CulongMax, ClongMax, CdoubleMax
 
-end
+include("assignment.jl")
+include("basic_arithmetic.jl")
+include("comparison.jl")
+include("special_functions.jl")
+include("integer_reminder.jl")
+
+end # module
