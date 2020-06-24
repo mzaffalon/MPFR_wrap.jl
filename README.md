@@ -1,7 +1,7 @@
 # MPFR_wrap
 
-[![Build Status](https://travis-ci.com/michele.zaffalon@gmail.com/MPFR_wrap.jl.svg?branch=master)](https://travis-ci.com/michele.zaffalon@gmail.com/MPFR_wrap.jl)
-[![Coverage](https://codecov.io/gh/michele.zaffalon@gmail.com/MPFR_wrap.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/michele.zaffalon@gmail.com/MPFR_wrap.jl)
+[![Build Status](https://travis-ci.com/mzaffalon/MPFR_wrap.jl.svg?branch=master)](https://travis-ci.com/mzaffalon/MPFR_wrap.jl)
+[![Coverage](https://codecov.io/gh/mzaffalon/MPFR_wrap.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/mzaffalon/MPFR_wrap.jl)
 
 This module provides [Julia-language](https://julialang.org) wrappers
 to the free/open-source [MPFR library](https://www.mpfr.org/) for
