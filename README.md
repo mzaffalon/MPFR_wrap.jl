@@ -8,11 +8,11 @@ to the free/open-source [MPFR library](https://www.mpfr.org/) for
 "multiple-precision floating-point computations with _correct
 rounding_".
 
-`MPFR_wrap.jl` makes use of Julia's BigFloat but allows the user to
-perform in-place operations to minimize garbage
-collection. `MPFR_wrap.jl`'s functions that modify their input have
-names terminating with a bang (!) following the standard Julia
-convention.
+`MPFR_wrap.jl` does not introduce new types and instead makes use of
+Julia's BigFloat but allows the user to perform in-place operations to
+minimize garbage collection. `MPFR_wrap.jl`'s functions that modify
+their input have names terminating with a bang (!) following the
+standard Julia convention.
 
 # Example
 
